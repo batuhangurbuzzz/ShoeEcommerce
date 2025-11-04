@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Gothic';
+    src: url('/assets/fonts/Gothic\ 821\ Condensed.woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fresh-mint: #275848;
+    --dark-fresh-mint: #163027;
+    --banana-skin: #F6D700;
+    --pure-white: #fff;
+    --mint-cream: #fafbf8;
+    --rose-white: #f1faea;
+}
+
+body{
+    background: var(--mint-cream);
+}
