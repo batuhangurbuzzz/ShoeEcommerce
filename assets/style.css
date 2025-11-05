@@ -7,6 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gothic', sans-serif;
+
 }
 
 :root{
@@ -18,6 +20,322 @@
     --rose-white: #f1faea;
 }
 
+/* BASIC STYLING */
+
 body{
     background: var(--mint-cream);
+}
+
+.bg-fresh-mint{
+    background: var(--fresh-mint);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.wrapper{
+    padding-inline: 1rem;
+}
+
+
+
+/* HEADER STYLING */
+
+.navbar{
+    min-height: 13vh;
+}
+
+.navlist{
+    gap: 2.5rem;
+}
+
+.link{
+    color: var(--mint-cream);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .1rem;
+}
+
+.logo{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: var(--pure-white);
+}
+
+.hamburger{
+    color: var(--pure-white);
+    font-size: 1.6rem;
+    display: none;
+
+}
+
+.mobile-list{
+    display: none;
+}
+
+.mobile-list .link{
+    font-size: 1.1rem;
+    color: var(--dark-fresh-mint);
+    text-transform: uppercase;
+    font-family: 'Gothic', sans-serif;
+}
+
+/* SECTIONS STYLING */
+
+.hero-content{
+    min-height: 100vh;
+    position: relative;
+}
+
+h1{
+    font-size: 30vw;
+    color: var(--pure-white);
+    text-transform: uppercase;
+    letter-spacing: -1rem;
+    line-height: 100%;
+    text-shadow: 0 0 1.5rem var(--dark-fresh-mint);
+    text-align: center;
+}
+
+.wavy-shape{
+    position: absolute;
+    bottom: 0;
+}
+
+.shoe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    width: 54vw;
+
+}
+
+.hero-inner{
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    min-height: 30vh;
+    align-items: flex-end;
+
+}
+
+.hero-section{
+    border-radius: 0 0 5rem 5rem;
+}
+
+.circle{
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--banana-skin);
+    align-self: flex-start;
+    position: relative;
+}
+
+.circle::before{
+    content: '# 1 Best Sneakers';
+    position: absolute;
+    top: 0;
+    left: 15%;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    line-height: 100%;
+    text-shadow: .3rem .3rem 0 var(--pure-white);
+    transform: rotate(-20deg);
+}
+
+.para{
+    max-width: 320px;
+    color: var(--dark-fresh-mint);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.cylinder{
+    padding: 1rem;
+}
+
+.cylinder-inner{
+    background: var(--banana-skin);
+    width: 100%;
+    min-height: 17vh;
+    border-radius: 100vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h4{
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    color: var(--fresh-mint);
+
+}
+
+.mobile-para{
+    color: var(--pure-white);
+    max-width: 350px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px){
+    .navlist{
+        display: none;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+    
+    .navbar{
+        position: relative;
+    }
+
+    .mobile-list{
+        display: block;
+        position: absolute;
+        background: var(--banana-skin);
+        top: 120px;
+        left: -100%;
+        transform: translateX(-50%);
+        padding: 3rem;
+        border-radius: 5rem;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.6) 0 2rem 6rem 0;
+        outline: .4rem  solid var(--pure-white);
+        transition: all .6s ease-in-out;
+        z-index: 5;
+
+    }
+
+    .mobile-list-active{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h1{
+        font-size: 8.6rem;
+        letter-spacing: -.1rem;
+    }
+
+    .hero-content{
+        min-height: 83vh;
+        padding-top: 2rem;
+    }
+
+    .hero-inner{
+        display: none;
+    }
+
+    .shoe{
+        width: 27rem;
+        top: 60%;
+    }
+
+    .mobile-para{
+        display: block;
+        
+    }
+
+    h4{
+        font-size: 3rem;
+    }
+
+    .cylinder-inner{
+        min-height: 13vh;
+    }
+
 }
