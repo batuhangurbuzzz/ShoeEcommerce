@@ -61,6 +61,10 @@ img{
     padding-inline: 1rem;
 }
 
+.p-block{
+    padding-block: 7rem;
+}
+
 
 
 /* HEADER STYLING */
@@ -204,6 +208,67 @@ h4{
     display: none;
 }
 
+h2{
+    font-size: 7.5vw;
+    color: var(--fresh-mint);
+    text-transform: uppercase;
+    letter-spacing: -.25rem;
+}
+
+.capsule{
+    width: 15rem;
+    height: 5rem;
+    background: linear-gradient(90deg, pink, #d4d4d4);
+    border-radius: 100vw;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+
+}
+
+.capsule img{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    transition: all .4s ease-in-out;
+
+}
+
+.profile{
+    width: 4rem;
+    aspect-ratio: 1rem;
+    border-radius: 100vw;
+    border: .3rem solid var(--pure-white);
+    overflow: hidden;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capsule:hover img{
+    transform: translate(-50%, -35%) rotate(45deg);
+}
+
+.btn{
+    background: var(--fresh-mint);
+    color: var(--pure-white);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 100vw;
+    border: .4rem solid var(--pure-white);
+}
+
+
+
+
+
+
 
 
 
@@ -336,6 +401,11 @@ h4{
 
     .cylinder-inner{
         min-height: 13vh;
+    }
+
+    h2{
+        font-size: 4.4rem;
+        letter-spacing: -.1rem;
     }
 
 }
